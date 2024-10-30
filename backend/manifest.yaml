@@ -20,9 +20,9 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-    app: nodejs
-    tier: backend
-    project: expense
+      app: nodejs
+      tier: backend
+      project: expense
   template:
     metadata:
       labels:
