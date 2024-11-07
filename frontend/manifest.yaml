@@ -26,11 +26,11 @@ spec:
         image: joindevops/frontend:v1
         resources:
           requests:
-            memory: "64Mi"     # Minimum amount of memory the container will need
-            cpu: "250m"        # Minimum amount of CPU the container will need
+            memory: "32Mi"     # Minimum amount of memory the container will need
+            cpu: "125m"        # Minimum amount of CPU the container will need
           limits:
-            memory: "64Mi"    # Maximum amount of memory the container can use
-            cpu: "250m"
+            memory: "32Mi"    # Maximum amount of memory the container can use
+            cpu: "125m"
 ---
 apiVersion: v1
 kind: Service
