@@ -9,6 +9,7 @@ metadata:
     project: expense
 spec:
   # modify replicas according to your case
+  replicas: 2
   selector:
     matchLabels:
       app: html
@@ -26,11 +27,11 @@ spec:
         image: joindevops/frontend:v1
         resources:
           requests:
-            memory: "32Mi"     # Minimum amount of memory the container will need
-            cpu: "125m"        # Minimum amount of CPU the container will need
+            memory: "8Mi"     # Minimum amount of memory the container will need
+            cpu: "50m"        # Minimum amount of CPU the container will need
           limits:
-            memory: "32Mi"    # Maximum amount of memory the container can use
-            cpu: "125m"
+            memory: "8Mi"    # Maximum amount of memory the container can use
+            cpu: "50m"
 ---
 apiVersion: v1
 kind: Service
